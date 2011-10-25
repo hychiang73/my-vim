@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/dickychiang/works/Panther/original/TI_Android_GingerBread_2_3_4Sources/hardware/ti/wlan/mac80211/compat/drivers/net'
+let g:netrw_dirhist_2='/home/dickychiang/works/Panther/original/TI_Android_GingerBread_2_3_4Sources/hardware/ti/wlan/mac80211/compat/drivers/net/wireless'
+let g:netrw_dirhist_3='/home/dickychiang/works/Panther/original/TI_Android_GingerBread_2_3_4Sources/hardware/ti/wlan/mac80211/compat/drivers/net/wireless/wl12xx'
+let g:netrw_dirhist_4='/home/dickychiang/works/Panther/original/TI_Android_GingerBread_2_3_4Sources/external/hostap/hostapd'
+let g:netrw_dirhist_5='/home/dickychiang/works/Panther/original/TI_Android_GingerBread_2_3_4Sources/external/hostap_w8'
