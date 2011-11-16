@@ -18,7 +18,7 @@ filetype indent on
 set autoread
 
 " When vimrc is edited, reload it
-autocmd! bufwritepost vimrc source ~/.vim_runtime/vimrc
+autocmd! bufwritepost vimrc source ~/.vimrc
 
 " always show the mouse
 "set mouse=a
@@ -167,8 +167,5 @@ nmap <F11> :TrinityToggleNERDTree<CR>
 
 """"" Project Item
 "Panther 
-set tags=/home/dickychiang/works/Panther/TI_Android_GingerBread_2_3_4Sources/kernel
-set tags=/home/dickychiang/works/Panther/TI_Android_GingerBread_2_3_4Sources/hardware/ti/wlan/mac80211/compat
-cs add /home/dickychiang/works/Panther/TI_Android_GingerBread_2_3_4Sources/kernel/cscope.out /home/dickychiang/works/Panther/TI_Android_GingerBread_2_3_4Source/kernel
-cs add /home/dickychiang/works/Panther/TI_Android_GingerBread_2_3_4Sources/hardware/ti/wlan/mac80211/compat/cscope.out /home/dickychiang/works/Panther/TI_Android_GingerBread_2_3_4Sourcehardware/ti/wlan/mac80211/compat
-
+set tags=/home/dicky/works/dm37/panther/android/kernel
+cs add /home/dicky/works/dm37/panther/android/kernel/cscope.out /home/dicky/works/dm37/panther/android/kernel
