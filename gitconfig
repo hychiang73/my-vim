@@ -1,0 +1,14 @@
+[user]
+	name = Dicky Chiang
+	email = dickychiang73@gmail.com
+[core]
+	editor = vim
+[merge]
+	tool = vimdiff
+[color]
+	ui = true
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
