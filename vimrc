@@ -1,9 +1,6 @@
 " Maintain : Hisao Yu Chiang
-"
 " Mail : dickychiang73@gamil.com
-"
 " Date : 2011/6/22
-"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -21,8 +18,8 @@ set autoread
 autocmd! bufwritepost vimrc source ~/.vimrc
 
 " always show the mouse
-"set mouse=a
-set mouse=nv
+set mouse=r
+"set mouse=nv
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
@@ -61,13 +58,12 @@ if has("autocmd")
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"set background=dark
-colorscheme xemacs
-"colorscheme eclipse
-"colorscheme darkZ
-syntax on
-"set t_Co=256
+"colorscheme gruvbox
+"colorscheme matrix
+colorscheme Monokai-Refined
 syntax enable
+set background=dark
+set t_Co=256
 "Default file types
 set ffs=unix,dos,mac 
 
@@ -82,21 +78,25 @@ set noswapfile
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set expandtab
+set noexpandtab
 set shiftwidth=4
-set tabstop=4
-set smarttab
-set lbr
-set tw=500
+set tabstop=8
+set softtabstop=4
+set autoindent
+set smartindent
+set modeline
+"set list
+"set smarttab
+"set lbr
+"set tw=500
 "Auto indent
 set ai 
 "Smart indet
 set si 
 "Wrap lines
-set wrap 
+"set wrap 
 "C indent
-set cin
-
+"set cin
 """"""""""""""""""""""""""""""
 " => Statusline
 """"""""""""""""""""""""""""""
@@ -127,6 +127,9 @@ nmap <F2> :Tlist<CR>
 let g:winManagerWindowLayout='FileExplorer|TagList'
 let g:winManagerWindowLayout='FileExplorer'
 nmap wm :WMToggle<CR>
+" NERDTree - To open the nerdtree tabs as default
+let g:nerdtree_tabs_open_on_console_startup=1
+nmap nt :NERDTreeToggle <CR>
 
 """""""QuickFix"""""""
 nmap <F4> :cw<CR>
@@ -161,11 +164,9 @@ nmap <F8> :TrinityToggleAll<CR>
 " Open and close the srcexpl.vim separately 
 nmap <F9> :TrinityToggleSourceExplorer<CR> 
 " Open and close the taglist.vim separately 
-nmap <F10> :TrinityToggleTagList<CR> 
+nmap tt :TrinityToggleTagList<CR> 
 " Open and close the NERD_tree.vim separately 
-nmap <F11> :TrinityToggleNERDTree<CR> 
+nmap ttn :TrinityToggleNERDTree<CR> 
 
-""""" Project Item
-"Panther 
-set tags=/home/dicky/works/dm37/panther/android/kernel
-cs add /home/dicky/works/dm37/panther/android/kernel/cscope.out /home/dicky/works/dm37/panther/android/kernel
+nmap op :ConqueTerm bash<CR>
+let g:CSApprox_loaded = 1
