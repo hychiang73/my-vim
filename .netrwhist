@@ -1,4 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/dickychiang/works/Panther/original/TI_Android_GingerBread_2_3_4Sources/hardware/ti/wlan/mac80211/compat/drivers'
-let g:netrw_dirhist_2='/home/dickychiang/works/Panther/original/TI_Android_GingerBread_2_3_4Sources/hardware/ti/wlan/mac80211/compat/drivers/bluetooth'
