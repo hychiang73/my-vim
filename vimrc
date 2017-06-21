@@ -32,7 +32,7 @@ let Tlist_Show_One_File=1
 let Tlist_Use_Right_Window=1
 let Tlist_Exit_OnlyWindow=1
 let Tlist_Auto_Open=0
-nmap tt :Tlist<CR>
+"nmap tt :Tlist<CR>
 
 Plugin 'minibufexpl.vim' 
 let g:miniBufExplMapWindowNavVim = 1   
@@ -56,6 +56,17 @@ nmap zf :vert scs find f <C-R>=expand("<cfile>")<CR><CR>
 nmap zi :vert scs find i ^<C-R>=expand("<cfile>")<CR>$<CR> 
 nmap zd :vert scs find d <C-R>=expand("<cword>")<CR><CR>
 
+Plugin 'flazz/vim-colorschemes'
+colorscheme monokain
+
+Plugin 'majutsushi/tagbar'
+nmap tt :TagbarToggle<CR>
+
+Plugin 'justinmk/vim-syntax-extra'
+
+" Fast Change c/h file between
+Plugin 'vim-scripts/a.vim'                                                                                                                                                                                                                                                    
+nnoremap <silent> <F8> :A<CR>
 
 " ======================================
 
