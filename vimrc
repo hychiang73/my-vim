@@ -1,91 +1,40 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+" cscope settings
+noremap <leader>cs :cs find s 
+noremap <C-/>s :cs find s <C-R>=expand("<cword>")<CR><CR>
+noremap <C-/>g :cs find g <C-R>=expand("<cword>")<CR><CR>
+noremap <C-/>c :cs find c <C-R>=expand("<cword>")<CR><CR>
+noremap <C-/>d :cs find d <C-R>=expand("<cword>")<CR><CR>
+noremap <C-/>t :cs find t <C-R>=expand("<cword>")<CR><CR>
+noremap <C-/>e :cs find e <C-R>=expand("<cword>")<CR><CR>
+noremap <C-/>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
+noremap <C-/>i :cs find i <C-R>=expand("<cfile>")<CR><CR>
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+" =========================================================================
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-" plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
-
-" plugin from http://vim-scripts.org/vim/scripts.html
-Plugin 'L9'
-
-" Git plugin not hosted on GitHub
-Plugin 'git://git.wincent.com/command-t.git'
-
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-
-" =======================================
-
-Plugin 'scrooloose/nerdtree'
+" NERDTree settings
 let g:nerdtree_tabs_open_on_console_startup=1
+"autocmd VimEnter * NERDTree
 nmap nt :NERDTreeToggle <CR>
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
 
-Plugin 'taglist.vim'
-let Tlist_Show_One_File=1
-let Tlist_Use_Right_Window=1
-let Tlist_Exit_OnlyWindow=1
-let Tlist_Auto_Open=0
-"nmap tt :Tlist<CR>
+" =========================================================================
 
-Plugin 'minibufexpl.vim' 
-let g:miniBufExplMapWindowNavVim = 1   
-let g:miniBufExplMapWindowNavArrows = 1   
-let g:miniBufExplMapCTabSwitchBufs = 1   
-let g:miniBufExplModSelTarget = 1  
+" MBE settings
+let g:miniBufExplMapWindowNavVim = 1
+let g:miniBufExplMapWindowNavArrows = 1
+let g:miniBufExplMapCTabSwitchBufs = 1
+let g:miniBufExplModSelTarget = 1
 let g:miniBufExplMoreThanOne=0
-map <F9> :MBEbp<CR>
-map <F10> :MBEbn<CR>
+nmap qq :MBEbp<CR>
+nmap ww :MBEbn<CR>
 
-Plugin 'bling/vim-airline'
-set laststatus=2
+" =========================================================================
 
-Plugin 'autoload_cscope.vim'
-nmap zs :vert scs find s <C-R>=expand("<cword>")<CR><CR>
-nmap zg :vert scs find g <C-R>=expand("<cword>")<CR><CR>
-nmap zc :vert scs find c <C-R>=expand("<cword>")<CR><CR>
-nmap zt :vert scs find t <C-R>=expand("<cword>")<CR><CR>
-nmap ze :vert scs find e <C-R>=expand("<cword>")<CR><CR>
-nmap zf :vert scs find f <C-R>=expand("<cfile>")<CR><CR>   
-nmap zi :vert scs find i ^<C-R>=expand("<cfile>")<CR>$<CR> 
-nmap zd :vert scs find d <C-R>=expand("<cword>")<CR><CR>
-
-Plugin 'flazz/vim-colorschemes'
-colorscheme monokain
-
-Plugin 'majutsushi/tagbar'
+" Tagbar settings
 nmap tt :TagbarToggle<CR>
-
-Plugin 'justinmk/vim-syntax-extra'
-
-" Fast Change c/h file between
-Plugin 'vim-scripts/a.vim'                                                                                                                                                                                                                                                    
-nnoremap <silent> <F8> :A<CR>
-
-" ======================================
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
-
 
 " Sets how many lines of history VIM has to remember
 set history=300
@@ -134,13 +83,7 @@ if has("autocmd")
       au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
   endif
 
-"colorscheme gruvbox
-"colorscheme matrix
-"colorscheme Monokai-Refined
-
-syntax enable
-
-"set background=dark
+syntax on
 
 set t_Co=256
 
@@ -192,10 +135,3 @@ set cin
 set fileencodings=utf-8,gb2312,gbk,gb18030
 set termencoding=utf-8
 "set fileformats=unix
-
-" Grep command
-"nnoremap <silent> <F3> :Grep<CR>
-
-" Fast Change c/h file between
-"nnoremap <silent> <F12> :A<CR>
-

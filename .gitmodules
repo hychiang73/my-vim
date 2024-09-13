@@ -1,0 +1,15 @@
+[submodule "vim/pack/hychiang/start/vim-airline"]
+	path = vim/pack/hychiang/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "vim/pack/hychiang/start/cscope-maps"]
+	path = vim/pack/hychiang/start/cscope-maps
+	url = https://github.com/joe-skb7/cscope-maps.git
+[submodule "vim/pack/hychiang/start/minibufexpl"]
+	path = vim/pack/hychiang/start/minibufexpl
+	url = https://github.com/fholgado/minibufexpl.vim.git
+[submodule "vim/pack/hychiang/start/nerdtree"]
+	path = vim/pack/hychiang/start/nerdtree
+	url = https://github.com/preservim/nerdtree.git
+[submodule "vim/pack/hychiang/start/tagbar"]
+	path = vim/pack/hychiang/start/tagbar
+	url = ttps://github.com/preservim/tagbar.git
