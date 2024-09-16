@@ -12,4 +12,4 @@
 	url = https://github.com/preservim/nerdtree.git
 [submodule "vim/pack/hychiang/start/tagbar"]
 	path = vim/pack/hychiang/start/tagbar
-	url = ttps://github.com/preservim/tagbar.git
+	url = https://github.com/preservim/tagbar.git
