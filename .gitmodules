@@ -13,3 +13,6 @@
 [submodule "vim/pack/hychiang/start/tagbar"]
 	path = vim/pack/hychiang/start/tagbar
 	url = https://github.com/preservim/tagbar.git
+[submodule "vim/pack/hychiang/start/grep"]
+	path = vim/pack/hychiang/start/grep
+	url = https://github.com/yegappan/grep.git

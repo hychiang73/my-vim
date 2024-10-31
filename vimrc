@@ -1,13 +1,13 @@
 " cscope settings
 noremap <leader>cs :cs find s 
-noremap <C-/>s :cs find s <C-R>=expand("<cword>")<CR><CR>
-noremap <C-/>g :cs find g <C-R>=expand("<cword>")<CR><CR>
-noremap <C-/>c :cs find c <C-R>=expand("<cword>")<CR><CR>
-noremap <C-/>d :cs find d <C-R>=expand("<cword>")<CR><CR>
-noremap <C-/>t :cs find t <C-R>=expand("<cword>")<CR><CR>
-noremap <C-/>e :cs find e <C-R>=expand("<cword>")<CR><CR>
-noremap <C-/>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
-noremap <C-/>i :cs find i <C-R>=expand("<cfile>")<CR><CR>
+noremap zs :cs find s <C-R>=expand("<cword>")<CR><CR>
+noremap zg :cs find g <C-R>=expand("<cword>")<CR><CR>
+noremap zc :cs find c <C-R>=expand("<cword>")<CR><CR>
+noremap zd :cs find d <C-R>=expand("<cword>")<CR><CR>
+noremap zt :cs find t <C-R>=expand("<cword>")<CR><CR>
+noremap ze :cs find e <C-R>=expand("<cword>")<CR><CR>
+noremap zf :cs find f <C-R>=expand("<cfile>")<CR><CR>
+noremap zi :cs find i <C-R>=expand("<cfile>")<CR><CR>
 
 " =========================================================================
 
@@ -48,7 +48,7 @@ set splitright
 autocmd! bufwritepost vimrc source ~/.vimrc
 
 " always show the mouse
-set mouse=r
+set mouse=a
 "set mouse=nv
 
 "Turn on WiLd menu
